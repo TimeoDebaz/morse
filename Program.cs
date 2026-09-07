@@ -1,97 +1,142 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
-
-
-
         Console.WriteLine("=== Convertisseur de texte en code Morse ===");
         Console.WriteLine("Entrez un mot ou une phrase (sans accents, lettres A-Z) :");
 
         string texte = Console.ReadLine();
+        string texteMajuscule = texte.ToUpper();
 
-        Console.WriteLine("Résultat en Morse : ");
+        Console.WriteLine("Résultat en Morse :");
 
-        if (texte == "A")
-            Console.WriteLine(".-");
+        foreach (char lettre in texteMajuscule)
+        {
+            if (lettre == 'A')
+                Console.Write(".- ");
 
-        if (texte == "B")
-            Console.WriteLine("-...");
+            else if (lettre == 'B')
+                Console.Write("-... ");
 
-        if (texte == "C")
-            Console.WriteLine("-.-.");
+            else if (lettre == 'C')
+                Console.Write("-.-. ");
 
-        if (texte == "D")
-            Console.WriteLine("-..");
+            else if (lettre == 'D')
+                Console.Write("-.. ");
 
-        if (texte == "E")
-            Console.WriteLine(".");
+            else if (lettre == 'E')
+                Console.Write(". ");
 
-        if (texte == "F")
-            Console.WriteLine("..-.");
+            else if (lettre == 'F')
+                Console.Write("..-. ");
 
-        if (texte == "G")
-            Console.WriteLine("--.");
+            else if (lettre == 'G')
+                Console.Write("--. ");
 
-        if (texte == "H")
-            Console.WriteLine("....");
+            else if (lettre == 'H')
+                Console.Write(".... ");
 
-        if (texte == "I")
-            Console.WriteLine("..");
+            else if (lettre == 'I')
+                Console.Write(".. ");
 
-        if (texte == "J")
-            Console.WriteLine(".---");
+            else if (lettre == 'J')
+                Console.Write(".--- ");
 
-        if (texte == "K")
-            Console.WriteLine("-.-");
+            else if (lettre == 'K')
+                Console.Write("-.- ");
 
-        if (texte == "L")
-            Console.WriteLine(".-..");
+            else if (lettre == 'L')
+                Console.Write(".-.. ");
 
-        if (texte == "M")
-            Console.WriteLine("--");
+            else if (lettre == 'M')
+                Console.Write("-- ");
 
-        if (texte == "N")
-            Console.WriteLine("-.");
+            else if (lettre == 'N')
+                Console.Write("-. ");
 
-        if (texte == "O")
-            Console.WriteLine("---");
+            else if (lettre == 'O')
+                Console.Write("--- ");
 
-        if (texte == "P")
-            Console.WriteLine(".--.");
+            else if (lettre == 'P')
+                Console.Write(".--. ");
 
-        if (texte == "Q")
-            Console.WriteLine("--.-");
+            else if (lettre == 'Q')
+                Console.Write("--.- ");
 
-        if (texte == "R")
-            Console.WriteLine(".-.");
+            else if (lettre == 'R')
+                Console.Write(".-. ");
 
-        if (texte == "S")
-            Console.WriteLine("...");
+            else if (lettre == 'S')
+                Console.Write("... ");
 
-        if (texte == "T")
-            Console.WriteLine("-");
+            else if (lettre == 'T')
+                Console.Write("- ");
 
-        if (texte == "U")
-            Console.WriteLine("..-");
+            else if (lettre == 'U')
+                Console.Write("..- ");
 
-        if (texte == "V")
-            Console.WriteLine("...-");
+            else if (lettre == 'V')
+                Console.Write("...- ");
 
-        if (texte == "W")
-            Console.WriteLine(".--");
+            else if (lettre == 'W')
+                Console.Write(".-- ");
 
-        if (texte == "X")
-            Console.WriteLine("-..-");
+            else if (lettre == 'X')
+                Console.Write("-..- ");
 
-        if (texte == "Y")
-            Console.WriteLine("-.--");
+            else if (lettre == 'Y')
+                Console.Write("-.-- ");
 
-        if (texte == "Z")
-            Console.WriteLine("--..");
+            else if (lettre == 'Z')
+                Console.Write("--.. ");
+
+            else if (lettre == '0')
+                Console.Write("----- ");
+
+            else if (lettre == '1')
+                Console.Write(".---- ");
+
+            else if (lettre == '2')
+                Console.Write("..--- ");
+
+            else if (lettre == '3')
+                Console.Write("...-- ");
+
+            else if (lettre == '4')
+                Console.Write("....- ");
+
+            else if (lettre == '5')
+                Console.Write("..... ");
+
+            else if (lettre == '6')
+                Console.Write("-.... ");
+
+            else if (lettre == '7')
+                Console.Write("--... ");
+
+            else if (lettre == '8')
+                Console.Write("---.. ");
+
+            else if (lettre == '9')
+                Console.Write("----. ");
+
+            else if (lettre == ' ')
+                Console.Write("/ ");
+
+            else
+            {
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Erreur : le caractère '" + lettre + "' n'est pas autorisé.");
+                Console.ResetColor();
+                Console.WriteLine("");
+                Console.WriteLine("Fin du programme");
+
+                return;
+            }
+
+        }
     }
 }
-
