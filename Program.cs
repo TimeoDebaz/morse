@@ -1,8 +1,7 @@
 ﻿using System;
-
-#pragma warning disable CA1416 // désactive l'erreur de Console.Beep
 class Program
 {
+    // Bip Morse
     const int FrequenceBeep = 800;
     const int DureePoint = 200;
     const int DureeTiret = 400;
@@ -11,6 +10,7 @@ class Program
     {
         string choix;
 
+        // Menu principal
         do
         {
             Console.WriteLine("=== Couteau Suisse - Utilitaires ===");
@@ -37,7 +37,7 @@ class Program
             Console.WriteLine("Entrez un mot ou une phrase (sans accents, lettres A-Z) :");
 
             string texte = Console.ReadLine();
-            string texteMajuscule = texte.ToUpper();
+            string texteMajuscule = texte.ToUpper(); // Met tout le texte écrit pas l'utilisateur en Majuscule
 
             Console.WriteLine("Résultat en Morse :");
 
@@ -360,7 +360,7 @@ class Program
                     Console.Write("/ ");
                 }
 
-                else
+                else // Si la lettre entrée par l'utilisateur n'est pas entre A-Z et 0-1 alors le programme met une erreur et s'arrête
                 {
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -393,19 +393,158 @@ class Program
                 if (choixConvertisseur != "1" && choixConvertisseur != "2" && choixConvertisseur != "3" && choixConvertisseur != "4")
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nVeuillez entrer un choix valide (1 à 3)\n");
+                    Console.WriteLine("Veuillez entrer un choix valide (1 à 3)");
                     Console.ResetColor();
                 }
 
             } while (choixConvertisseur != "1" && choixConvertisseur != "2" && choixConvertisseur != "3" && choixConvertisseur != "4");
 
-            if (choixConvertisseur == "1") ;
+            if (choixConvertisseur == "1")
             {
+                // Décimal à binaire
                 Console.Write("Entrez un nombre décimal : ");
-                string nombreDécimal = Console.ReadLine();
+                int nombreDecimal = int.Parse(Console.ReadLine());
 
+                string resultat = "";
+
+                while (nombreDecimal > 0)
+                {
+                    int reste = nombreDecimal % 2;
+                    resultat = reste + resultat;
+
+                    // On divise par 2
+                    nombreDecimal = nombreDecimal / 2;
+                }
+
+                Console.WriteLine("Résultat : " + resultat);
             }
 
+            if (choixConvertisseur == "2")
+            {
+                // Binaire à décimal
+                Console.Write("Entrez un nombre binaire : ");
+                string nombreBinaire = Console.ReadLine();
+
+                do
+                {
+                    // Vérifie si le nombre est bien binaire
+                    for (int i = 0; i < nombreBinaire.Length; i++)
+                    {
+                        if (nombreBinaire[i] != '0' && nombreBinaire[i] != '1')
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Veuillez entrer que des valeurs de 1 ou 0");
+                            Console.ResetColor();
+
+                            Console.Write("Entrez un nombre binaire : ");
+                            nombreBinaire = Console.ReadLine();
+
+                            break;
+                        }
+                    }
+                } while (nombreBinaire.Contains("2"));
+
+                int resultat = 0;
+                int puissance = 1;
+
+                // Convertit binaire en décimal
+                for (int i = nombreBinaire.Length - 1; i >= 0; i--)
+                {
+                    if (nombreBinaire[i] == '1')
+                    {
+                        resultat = resultat + puissance;
+                    }
+
+                    puissance = puissance * 2;
+                }
+
+                Console.WriteLine("Résultat : " + resultat);
+            }
+
+            if (choixConvertisseur == "3")
+            {
+                // Binaire à octal
+                Console.Write("Entrez un nombre Binaire : ");
+                string nombreBinaireOctal = Console.ReadLine();
+
+                do
+                {
+                    // Vérifie si le nombre est bien binaire
+                    for (int i = 0; i < nombreBinaireOctal.Length; i++)
+                    {
+                        if (nombreBinaireOctal[i] != '0' && nombreBinaireOctal[i] != '1')
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Veuillez entrer que des valeurs de 1 ou 0");
+                            Console.ResetColor();
+
+                            Console.Write("Entrez un nombre binaire : ");
+                            nombreBinaireOctal = Console.ReadLine();
+
+                            break;
+                        }
+                    }
+                } while (nombreBinaireOctal.Contains("2"));
+
+                int resultat = 0;
+                int puissance = 1;
+
+                // Convertit le binaire en décimal
+                for (int i = nombreBinaireOctal.Length - 1; i >= 0; i--)
+                {
+                    if (nombreBinaireOctal[i] == '1')
+                    {
+                        resultat += puissance;
+                    }
+
+                    puissance *= 2;
+                }
+
+                // Convertit le décimal en octal
+                string nombreOctal = "";
+
+                do
+                {
+                    int reste = resultat % 8;
+                    nombreOctal = reste + nombreOctal;
+                    resultat /= 8;
+                } while (resultat > 0);
+
+                Console.WriteLine("Résultat : " + nombreOctal);
+            }
+
+            if (choixConvertisseur == "4")
+            {
+                // Octal à binaire
+                Console.Write("Entrez un nombre en Octal : ");
+                string nombreOctalBinaire = Console.ReadLine();
+
+                string resultat = "";
+
+                for (int i = 0; i < nombreOctalBinaire.Length; i++)
+                {
+                    int nombre = nombreOctalBinaire[i] - '0';
+                    string binaire = "";
+
+                    // On transforme le chiffre octal en binaire
+                    while (nombre > 0)
+                    {
+                        int reste = nombre % 2;
+                        binaire = reste + binaire;
+                        nombre = nombre / 2;
+                    }
+
+                    // On ajoute les 0 manquants
+                    while (binaire.Length < 3)
+                    {
+                        binaire = "0" + binaire;
+                    }
+
+                    resultat = resultat + binaire;
+                }
+
+                Console.WriteLine("Résultat : " + resultat);
+            }
         }
     }
 }
