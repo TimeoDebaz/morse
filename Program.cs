@@ -45,314 +45,446 @@ class Program
             {
                 if (lettre == 'A')
                 {
-                    Console.Write(".- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'B')
                 {
-                    Console.Write("-... ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'C')
                 {
-                    Console.Write("-.-. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'D')
                 {
-                    Console.Write("-.. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'E')
                 {
-                    Console.Write(". ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'F')
                 {
-                    Console.Write("..-. ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'G')
                 {
-                    Console.Write("--. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'H')
                 {
-                    Console.Write(".... ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'I')
                 {
-                    Console.Write(".. ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'J')
                 {
-                    Console.Write(".--- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'K')
                 {
-                    Console.Write("-.- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'L')
                 {
-                    Console.Write(".-.. ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'M')
                 {
-                    Console.Write("-- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'N')
                 {
-                    Console.Write("-. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'O')
                 {
-                    Console.Write("--- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'P')
                 {
-                    Console.Write(".--. ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'Q')
                 {
-                    Console.Write("--.- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'R')
                 {
-                    Console.Write(".-. ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'S')
                 {
-                    Console.Write("... ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'T')
                 {
-                    Console.Write("- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'U')
                 {
-                    Console.Write("..- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'V')
                 {
-                    Console.Write("...- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'W')
                 {
-                    Console.Write(".-- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'X')
                 {
-                    Console.Write("-..- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'Y')
                 {
-                    Console.Write("-.-- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == 'Z')
                 {
-                    Console.Write("--.. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '0')
                 {
-                    Console.Write("----- ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '1')
                 {
-                    Console.Write(".---- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '2')
                 {
-                    Console.Write("..--- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '3')
                 {
-                    Console.Write("...-- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '4')
                 {
-                    Console.Write("....- ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '5')
                 {
-                    Console.Write("..... ");
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '6')
                 {
-                    Console.Write("-.... ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '7')
                 {
-                    Console.Write("--... ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '8')
                 {
-                    Console.Write("---.. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == '9')
                 {
-                    Console.Write("----. ");
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write("-");
                     Console.Beep(FrequenceBeep, DureeTiret);
+                    Console.Write(".");
                     Console.Beep(FrequenceBeep, DureePoint);
+                    Console.Write(" ");
                 }
 
                 else if (lettre == ' ')
@@ -469,7 +601,6 @@ class Program
 
                 do
                 {
-                    // Vérifie si le nombre est bien binaire
                     for (int i = 0; i < nombreBinaireOctal.Length; i++)
                     {
                         if (nombreBinaireOctal[i] != '0' && nombreBinaireOctal[i] != '1')
